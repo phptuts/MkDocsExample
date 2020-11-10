@@ -1,7 +1,9 @@
 site_name: How to setup mkdocs
 nav: 
   - Home: index.md
+  - Install Python: python.md 
   - MkDocs Class: setup.md
+  - Markdown Resources: markdown.md
 theme: 
     name: readthedocs
     highlightjs: true

@@ -4,7 +4,7 @@
 
 1) Signup for github and send your username to Noah or Jimmy.
 
-2) Install python 3 on your computer
+2) Install python 3 on your computer.  For more information go [here](python.md).
 
 3) Install mkdocs
 
@@ -20,7 +20,7 @@ pip install mkdocs
 mkdocs new .
 ```
 
-6) Type in mkdocs serve to see what your docs look like.
+6) Type in mkdocs serve to see what your docs look like.  Your website will be served at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 7) Go into the mkdocs.yml file and change the Site Name to something about your docs.
 
@@ -59,7 +59,8 @@ theme:
 ```yaml
 site_name: How to setup mkdocs
 nav: 
-  - MkDocs Class: setup.yml
+  - Home: index.md
+  - Tic Tac Toe Game: tictactoe.md
 theme: 
     name: readthedocs
     highlightjs: true
@@ -78,7 +79,7 @@ theme:
 
 4) To add code to your mkdocs do this for syntax highlight.
 
-\`\`\`jasascript
+\`\`\`javascript
 
 let b = 4;
 
@@ -100,6 +101,8 @@ let b = 4;
 
 ## Deploying Mkdocs
 
+Note you have to make this a public repository or have a pro github account.  Also you will need to have ssh keys installed on your computer for github.  To do that follow the [instructions here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
 1) Commit your repo to github.
 
 2) Run the command mkdocs gh-deploy
@@ -110,7 +113,7 @@ let b = 4;
 
 1) Go to your mkdocs.yml file and add this 
 
-```
+```yaml
 extra_javascript:
     - js/ex.js
 extra_css:
@@ -132,4 +135,11 @@ extra_css:
 ## Github  Repo
 
 You can see the code for this here.
+
+[Github Repo]()
+
+## Extra Info
+
+- [List of themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+
 

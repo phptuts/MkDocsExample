@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>MkDocs Class - How to setup mkdocs</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/style.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MkDocs Class";
+    var mkdocs_page_input_path = "setup.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/lua.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> How to setup mkdocs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MkDocs Class</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mkdocs-setup">Mkdocs Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-pages">Adding Pages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-images">Adding images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deploying-mkdocs">Deploying Mkdocs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-styles-and-javascript">Adding styles and javascript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#github-repo">Github  Repo</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">How to setup mkdocs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>MkDocs Class</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setup-instructions">Setup Instructions</h1>
+<h2 id="mkdocs-setup">Mkdocs Setup</h2>
+<p>1) Signup for github and send your username to Noah or Jimmy.</p>
+<p>2) Install python 3 on your computer</p>
+<p>3) Install mkdocs</p>
+<pre><code class="language-bash">pip install mkdocs
+</code></pre>
+<p>4) Create a folder and open it in vs code for your new docs.</p>
+<p>5) Open a terminal in vs code and type in the following command.</p>
+<pre><code class="language-bash">mkdocs new .
+</code></pre>
+<p>6) Type in mkdocs serve to see what your docs look like.</p>
+<p>7) Go into the mkdocs.yml file and change the Site Name to something about your docs.</p>
+<pre><code class="language-yaml">site_name: How to setup mkdocs
+</code></pre>
+<p>8) Add a theme to your mkdocs I like the read docs theme.</p>
+<pre><code class="language-yaml">site_name: How to setup mkdocs
+theme: 
+    name: readthedocs
+</code></pre>
+<p>9) Add highlight js for language highlighting and list the languaes you are planning on documenting.  In this example I did lua, javascript, and python.</p>
+<pre><code class="language-yaml">site_name: How to setup mkdocs
+theme: 
+    name: readthedocs
+    highlightjs: true
+    hljs_languages: ['lua', 'javascript', 'python']
+</code></pre>
+<h2 id="adding-pages">Adding Pages</h2>
+<p>1) Let's a page to our docs.  Create a markdown page called tictactoe.md.  Copy the contents below into the markdown file.</p>
+<pre><code class="language-markdown"># How to build a tic tac toe Game
+</code></pre>
+<p>2) Now go to the mkdocs.yml file and add this page to your navigation.</p>
+<pre><code class="language-yaml">site_name: How to setup mkdocs
+nav: 
+  - MkDocs Class: setup.yml
+theme: 
+    name: readthedocs
+    highlightjs: true
+    hljs_languages: ['lua', 'javascript', 'python']
+</code></pre>
+<p>3) Now add Some sections to your markdown page.</p>
+<pre><code class="language-markdown">## Demo
+
+## Steps
+
+## Assets
+</code></pre>
+<p>4) To add code to your mkdocs do this for syntax highlight.</p>
+<p>```jasascript</p>
+<p>let b = 4;</p>
+<p>```</p>
+<h2 id="adding-images">Adding images</h2>
+<p>1) Create a folder in your docs called images.</p>
+<p>2) Add an image your want to upload there.  I am going to add an image called calculator.png</p>
+<p>3) Add your image to the markdown file. The alt text is for people who can not see.</p>
+<pre><code class="language-markdown">![alt text](images/calculator.png)
+</code></pre>
+<p><img alt="calculator" src="../images/calculator.png" /></p>
+<h2 id="deploying-mkdocs">Deploying Mkdocs</h2>
+<p>1) Commit your repo to github.</p>
+<p>2) Run the command mkdocs gh-deploy</p>
+<p>3) Go to your github repos settings and scroll down. You should see the url.</p>
+<h2 id="adding-styles-and-javascript">Adding styles and javascript</h2>
+<p>1) Go to your mkdocs.yml file and add this </p>
+<pre><code>extra_javascript:
+    - js/ex.js
+extra_css:
+    - css/style.css
+</code></pre>
+<p>2) In your docs folder create js folder and css folder and create the ex.js and style.css.</p>
+<p>3) Test the js by adding an alert</p>
+<p>4) I like to add this to css so that my docs can take up the full screen.</p>
+<pre><code class="language-css">.wy-nav-content {
+    max-width: none;
+}
+</code></pre>
+<h2 id="github-repo">Github  Repo</h2>
+<p>You can see the code for this here.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

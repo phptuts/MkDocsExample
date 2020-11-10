@@ -1,0 +1,12 @@
+site_name: How to setup mkdocs
+nav: 
+  - Home: index.md
+  - MkDocs Class: setup.md
+theme: 
+    name: readthedocs
+    highlightjs: true
+    hljs_languages: ['lua', 'javascript', 'python']
+extra_css:
+    - css/style.css
+# extra_javascript:
+#     - js/ex.js

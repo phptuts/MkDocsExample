@@ -70,7 +70,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#github-repo">Github  Repo</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#extra-info">Extra Info</a>
+    </li>
     </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../markdown/">Markdown Resources</a>
                     </li>
                 </ul>
       </div>
@@ -116,7 +122,7 @@
 <p>5) Open a terminal in vs code and type in the following command.</p>
 <pre><code class="language-bash">mkdocs new .
 </code></pre>
-<p>6) Type in mkdocs serve to see what your docs look like.</p>
+<p>6) Type in mkdocs serve to see what your docs look like.  Your website will be served at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
 <p>7) Go into the mkdocs.yml file and change the Site Name to something about your docs.</p>
 <pre><code class="language-yaml">site_name: How to setup mkdocs
 </code></pre>
@@ -139,7 +145,7 @@ theme:
 <p>2) Now go to the mkdocs.yml file and add this page to your navigation.</p>
 <pre><code class="language-yaml">site_name: How to setup mkdocs
 nav: 
-  - MkDocs Class: setup.yml
+  - Tic Tac Toe Game: tictactoe.md
 theme: 
     name: readthedocs
     highlightjs: true
@@ -153,7 +159,7 @@ theme:
 ## Assets
 </code></pre>
 <p>4) To add code to your mkdocs do this for syntax highlight.</p>
-<p>```jasascript</p>
+<p>```javascript</p>
 <p>let b = 4;</p>
 <p>```</p>
 <h2 id="adding-images">Adding images</h2>
@@ -169,7 +175,7 @@ theme:
 <p>3) Go to your github repos settings and scroll down. You should see the url.</p>
 <h2 id="adding-styles-and-javascript">Adding styles and javascript</h2>
 <p>1) Go to your mkdocs.yml file and add this </p>
-<pre><code>extra_javascript:
+<pre><code class="language-yaml">extra_javascript:
     - js/ex.js
 extra_css:
     - css/style.css
@@ -183,12 +189,19 @@ extra_css:
 </code></pre>
 <h2 id="github-repo">Github  Repo</h2>
 <p>You can see the code for this here.</p>
+<p><a href="">Github Repo</a></p>
+<h2 id="extra-info">Extra Info</h2>
+<ul>
+<li><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">List of themes</a></li>
+</ul>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../markdown/" class="btn btn-neutral float-right" title="Markdown Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -219,6 +232,8 @@ extra_css:
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../markdown/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

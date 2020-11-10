@@ -136,7 +136,7 @@ extra_css:
 
 You can see the code for this here.
 
-[Github Repo]()
+[Github Repo](https://github.com/tcs-berkeley/MkDocsExample)
 
 ## Extra Info
 
